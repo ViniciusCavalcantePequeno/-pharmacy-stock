@@ -6,3 +6,5 @@ _Contribuintes:_
   * Abraão Borges
   * Maria Eduarda Coelho
   * Pedro Lucas
+
+![Github logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
