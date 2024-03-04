@@ -25,10 +25,4 @@ public class Ficha {
     public void setCartaoDoSUS(String cartaoDoSUS) {
         this.cartaoDoSUS = cartaoDoSUS;
     }
-
-    @Override
-    public String toString() {
-        
-    }
-
 }

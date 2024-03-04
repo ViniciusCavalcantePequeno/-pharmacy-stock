@@ -14,10 +14,11 @@ public class Conectar {
         Connection con = null;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection(url, usuario, senha)
+            con = DriverManager.getConnection(url, usuario, senha);
         }catch(Exception ex){
             JOptionPane.showMessageDialog(null, "Erro ao conectar ao banco de dados" + ex.getMessage());
         }
 
         return con;
     }
+}

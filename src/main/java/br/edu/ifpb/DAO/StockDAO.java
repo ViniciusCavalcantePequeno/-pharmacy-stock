@@ -1,13 +1,15 @@
+package DAO;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import Mapeamento.Remedios;
 
-public class EstoqueDAO {
+public class StockDAO {
 
     private List<Remedios> estoque;
 
-    public EstoqueDAO(){
+    public StockDAO(){
         this.estoque = new ArrayList<>();
     }
 
