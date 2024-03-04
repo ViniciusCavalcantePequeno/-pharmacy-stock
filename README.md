@@ -7,4 +7,4 @@ _Contribuintes:_
   * Maria Eduarda Coelho
   * Pedro Lucas
 
-![Gay logo]([https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png](https://e0.pxfuel.com/wallpapers/1014/611/desktop-wallpaper-lock-screen-lgbt-couple-lgbt-love.jpg)https://e0.pxfuel.com/wallpapers/1014/611/desktop-wallpaper-lock-screen-lgbt-couple-lgbt-love.jpg)
+![Gay logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png](https://e0.pxfuel.com/wallpapers/1014/611/desktop-wallpaper-lock-screen-lgbt-couple-lgbt-love.jpg)https://e0.pxfuel.com/wallpapers/1014/611/desktop-wallpaper-lock-screen-lgbt-couple-lgbt-love.jpg)
