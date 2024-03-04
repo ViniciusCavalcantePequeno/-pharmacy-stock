@@ -1,4 +1,4 @@
-![image](https://github.com/ViniciusCavalcantePequeno/pharmacy-stock/assets/147399524/d6bd5b05-de7c-482e-80b0-86bc036cf489)# Pharmacy Stock
+# Pharmacy Stock
 ## Instituo Federal de Ciência e Tecnologia da Paraíba
 
 _Contribuintes:_
