@@ -1,7 +1,7 @@
 public class Remedy {
     private String remedy;
-}
- public Remedy validatePatientName(String remedy) {
+
+    public Remedy validatePatientName(String remedy) {
         if (Remedy remedy.length() < 5 && remedy.length() > 50) {
             throw new 
         }
@@ -9,3 +9,4 @@ public class Remedy {
             remedy = this.remedy;
         }
     }
+}

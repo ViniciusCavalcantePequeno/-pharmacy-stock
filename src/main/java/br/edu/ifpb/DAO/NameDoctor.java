@@ -1,7 +1,7 @@
 public class NameDoctor {
     private String nameDoctor;
-}
- public NameDoctor validateDoctorName(String nameDoctor) {
+
+    public NameDoctor validateDoctorName(String nameDoctor) {
         if (NameDoctor nameDoctor.length() < 5 && nameDoctor.length() > 50) {
             throw new 
         }
@@ -9,3 +9,10 @@ public class NameDoctor {
             nameDoctor = this.nameDoctor;
         }
     }
+    public String getNameDoctor() {
+        return nameDoctor;
+    }
+    public void setNameDoctor(String nameDoctor) {
+        this.nameDoctor = nameDoctor;
+    }
+}
