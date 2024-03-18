@@ -2,23 +2,14 @@ package Mapeamento;
 
 public class Farmaceutico {
     
-    private int id_farmaceutico;
     private String nome;
     private String cpf;
     private String senha;
     
-    public Farmaceutico(int id_farmaceutico, String nome, String cpf, String senha) {
-        this.id_farmaceutico = id_farmaceutico;
+    public Farmaceutico(String nome, String cpf, String senha) {
         this.nome = nome;
         this.cpf = cpf;
         this.senha = senha;
-    }
-    public int getId_farmaceutico() {
-        return id_farmaceutico;
-    }
-
-    public void setId_farmaceutico(int id_farmaceutico) {
-        this.id_farmaceutico = id_farmaceutico;
     }
 
     public String getNome() {

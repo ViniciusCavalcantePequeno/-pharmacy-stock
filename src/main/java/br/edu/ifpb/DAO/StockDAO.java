@@ -16,7 +16,21 @@ public class StockDAO {
     public void adicionarItem(Remedios remedio) {
         estoque.add(remedio);
     }
+    
+    public void removerItem(int id) {
+        Remedios remedios = buscarRemedioPorId(id);
+        if (remedios != null) {
+            estoque.remove(id);
+        }
+    }
 
+    public void atualizarQuantidade(int id, int novaQuantidade) {
+        Remedios remedios = buscarRemedioPorId(id);
+        if (remedios != null) {
+            remedios.setQuantidade(novaQuantidade);
+        }
+    }
+    
     public Remedios buscarRemedioPorId(int id) {
         for (Remedios remedio : estoque) {
             if (remedio.getId() == id) {
@@ -30,18 +44,6 @@ public class StockDAO {
         return estoque;
     }
 
-    public void atualizarQuantidade(int id, int novaQuantidade) {
-        Remedios remedios = buscarRemedioPorId(id);
-        if (remedios != null) {
-            remedios.setQuantidade(novaQuantidade);
-        }
-    }
 
-    public void removerItem(int id) {
-        Remedios remedios = buscarRemedioPorId(id);
-        if (remedios != null) {
-            estoque.remove(id);
-        }
-    }
     
 }

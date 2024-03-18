@@ -3,9 +3,9 @@ package Mapeamento;
 public class Ficha {
     
     private String nome;
-    private String cartaoDoSUS;
+    private int cartaoDoSUS;
 
-    public Ficha(String nome, String cartaoDoSUS){
+    public Ficha(String nome, int cartaoDoSUS){
         this.nome = nome;
         this.cartaoDoSUS = cartaoDoSUS;
     }
@@ -18,11 +18,11 @@ public class Ficha {
         this.nome = nome;
     }
 
-    public String getCartaoDoSUS() {
+    public int getCartaoDoSUS() {
         return cartaoDoSUS;
     }
 
-    public void setCartaoDoSUS(String cartaoDoSUS) {
+    public void setCartaoDoSUS(int cartaoDoSUS) {
         this.cartaoDoSUS = cartaoDoSUS;
     }
 }
