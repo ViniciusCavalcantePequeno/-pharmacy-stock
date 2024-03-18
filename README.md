@@ -7,4 +7,4 @@ _Contribuintes:_
   * Maria Eduarda Coelho
   * Pedro Lucas
 
-![Gay logo](https://e0.pxfuel.com/wallpapers/1014/611/desktop-wallpaper-lock-screen-lgbt-couple-lgbt-love.jpg)
+![Gay logo](https://st2.depositphotos.com/1001911/9033/v/950/depositphotos_90335790-stock-illustration-cool-emoticon-pointing-at-you.jpg)
