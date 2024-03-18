@@ -3,7 +3,7 @@ package DAO;
 import java.util.ArrayList;
 import java.util.List;
 
-import Mapeamento.Ficha;
+import Objects.Ficha;
 
 public class FichaDAO {
 
@@ -17,7 +17,7 @@ public class FichaDAO {
         estoque.add(ficha);
     }
 
-    public Ficha buscarFichaPorCartaoDoSUS(String cartaoDoSUS) {
+    public Ficha buscarFichaPorCartaoDoSUS(int cartaoDoSUS) {
         for (Ficha ficha : estoque) {
             if (ficha.getCartaoDoSUS() == cartaoDoSUS) {
                 return ficha;
@@ -30,7 +30,7 @@ public class FichaDAO {
         return estoque;
     }
 
-    public void removerFicha(String cartaoDoSUS) {
+    public void removerFicha(int cartaoDoSUS) {
         Ficha ficha = buscarFichaPorCartaoDoSUS(cartaoDoSUS);
         if (ficha != null) {
             estoque.remove(cartaoDoSUS);

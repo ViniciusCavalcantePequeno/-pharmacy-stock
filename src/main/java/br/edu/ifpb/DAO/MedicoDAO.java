@@ -17,7 +17,7 @@ public class MedicoDAO {
     }
 
     public void addFichasNoSistema() {
-
+        
     }
 
     public void buscarRemedioPorId(int id) {

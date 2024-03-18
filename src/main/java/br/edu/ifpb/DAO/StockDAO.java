@@ -3,7 +3,7 @@ package DAO;
 import java.util.ArrayList;
 import java.util.List;
 
-import Mapeamento.Remedios;
+import Objects.Remedios;
 
 public class StockDAO {
 
