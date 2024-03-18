@@ -1,13 +1,13 @@
 package Objects;
 
 
-public class Remedios{
+public class Remedio{
 
     private int id;
     private String nome;
     private int quantidade;
 
-    public Remedios(int id, String nome, int quantidade) {
+    public Remedio(int id, String nome, int quantidade) {
         this.id = id;
         this.nome = nome;
         this.quantidade = quantidade;

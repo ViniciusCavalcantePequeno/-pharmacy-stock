@@ -7,18 +7,18 @@ import Objects.Ficha;
 
 public class FichaDAO {
 
-    private List<Ficha> estoque;
+    private List<Ficha> fichas;
 
     public FichaDAO() {
-        this.estoque = new ArrayList<>();
+        this.fichas = new ArrayList<>();
     }
 
     public void adicionarFicha(Ficha ficha) {
-        estoque.add(ficha);
+        fichas.add(ficha);
     }
 
     public Ficha buscarFichaPorCartaoDoSUS(int cartaoDoSUS) {
-        for (Ficha ficha : estoque) {
+        for (Ficha ficha : fichas) {
             if (ficha.getCartaoDoSUS() == cartaoDoSUS) {
                 return ficha;
             }
@@ -27,13 +27,13 @@ public class FichaDAO {
     }
 
     public List<Ficha> listarFichas() {
-        return estoque;
+        return fichas;
     }
 
     public void removerFicha(int cartaoDoSUS) {
         Ficha ficha = buscarFichaPorCartaoDoSUS(cartaoDoSUS);
         if (ficha != null) {
-            estoque.remove(cartaoDoSUS);
+            fichas.remove(cartaoDoSUS);
         }
     }
 
