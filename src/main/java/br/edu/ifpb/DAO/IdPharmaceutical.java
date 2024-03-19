@@ -1,3 +1,5 @@
+package DAO;
+
 public class IdPharmaceutical {
     private String idPharmaceutical;
 

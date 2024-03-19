@@ -1,12 +1,12 @@
 package Objects;
 
-public class Farmaceutico {
+public class Pharmaceutical {
     
     private String nome;
     private String cpf;
     private String senha;
     
-    public Farmaceutico(String nome, String cpf, String senha) {
+    public Pharmaceutical(String nome, String cpf, String senha) {
         this.nome = nome;
         this.cpf = cpf;
         this.senha = senha;

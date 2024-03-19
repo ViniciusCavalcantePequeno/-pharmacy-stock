@@ -9,29 +9,29 @@ public class StockDAO {
 
     private List<Remedy> stock;
 
-    public StockDAO(){
+    public StockDAO() {
         this.stock = new ArrayList<>();
     }
 
     public void addRemedy(Remedy remedy) {
-        stock.add(Remedy);
+        stock.add(remedy);
     }
-    
-    public void removerItem(int id) {
+
+    public void removeRemedyId(int id) {
         Remedy remedy = searchRemedyId(id);
         if (remedy != null) {
             stock.remove(id);
         }
     }
 
-    public void atualizarQuantity(int id, int newQuantity) {
+    public void updateQuantity(int id, int newQuantity) {
         Remedy remedy = searchRemedyId(id);
         if (remedy != null) {
             remedy.setQuantity(newQuantity);
         }
     }
-    
-    public Remedy searchRemedyPorId(int id) {
+
+    public Remedy searchRemedyId(int id) {
         for (Remedy remedy : stock) {
             if (remedy.getId() == id) {
                 return remedy;
@@ -44,6 +44,4 @@ public class StockDAO {
         return stock;
     }
 
-
-    
 }

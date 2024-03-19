@@ -3,22 +3,22 @@ package DAO;
 import java.util.ArrayList;
 import java.util.List;
 
-import Objects.Ficha;
+import Objects.Record;
 
 public class FichaDAO {
 
-    private List<Ficha> fichas;
+    private List<Record> fichas;
 
     public FichaDAO() {
         this.fichas = new ArrayList<>();
     }
 
-    public void adicionarFicha(Ficha ficha) {
+    public void adicionarFicha(Record ficha) {
         fichas.add(ficha);
     }
 
-    public Ficha buscarFichaPorCartaoDoSUS(int cartaoDoSUS) {
-        for (Ficha ficha : fichas) {
+    public Record buscarFichaPorCartaoDoSUS(int cartaoDoSUS) {
+        for (Record ficha : fichas) {
             if (ficha.getCartaoDoSUS() == cartaoDoSUS) {
                 return ficha;
             }
@@ -26,12 +26,12 @@ public class FichaDAO {
         return null;
     }
 
-    public List<Ficha> listarFichas() {
+    public List<Record> listarFichas() {
         return fichas;
     }
 
     public void removerFicha(int cartaoDoSUS) {
-        Ficha ficha = buscarFichaPorCartaoDoSUS(cartaoDoSUS);
+        Record ficha = buscarFichaPorCartaoDoSUS(cartaoDoSUS);
         if (ficha != null) {
             fichas.remove(cartaoDoSUS);
         }

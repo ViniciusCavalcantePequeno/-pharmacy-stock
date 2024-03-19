@@ -1,3 +1,5 @@
+package DAO;
+
 public class NamePatient {
     private String namePatient;
 

@@ -1,3 +1,5 @@
+package DAO;
+
 public class CardSus{
     private int cardSus;
     

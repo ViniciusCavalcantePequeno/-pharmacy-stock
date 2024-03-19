@@ -3,36 +3,36 @@ package DAO;
 import java.util.ArrayList;
 import java.util.List;
 
-import Objects.Remedio;
+import Objects.Remedy;
 
 public class StockDAO {
 
-    private List<Remedio> estoque;
+    private List<Remedy> estoque;
 
     public StockDAO(){
         this.estoque = new ArrayList<>();
     }
 
-    public void adicionarItem(Remedio remedio) {
+    public void adicionarItem(Remedy remedio) {
         estoque.add(remedio);
     }
     
     public void removerItemPorId(int id) {
-        Remedio remedios = buscarRemedioPorId(id);
+        Remedy remedios = buscarRemedioPorId(id);
         if (remedios != null) {
             estoque.remove(id);
         }
     }
 
     public void atualizarQuantidade(int id, int novaQuantidade) {
-        Remedio remedios = buscarRemedioPorId(id);
+        Remedy remedios = buscarRemedioPorId(id);
         if (remedios != null) {
             remedios.setQuantidade(novaQuantidade);
         }
     }
     
-    public Remedio buscarRemedioPorId(int id) {
-        for (Remedio remedio : estoque) {
+    public Remedy buscarRemedioPorId(int id) {
+        for (Remedy remedio : estoque) {
             if (remedio.getId() == id) {
                 return remedio;
             }
@@ -40,7 +40,7 @@ public class StockDAO {
         return null;
     }
 
-    public List<Remedio> listarRemedios() {
+    public List<Remedy> listarRemedios() {
         return estoque;
     }
 

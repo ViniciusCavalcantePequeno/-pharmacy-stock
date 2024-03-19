@@ -1,3 +1,5 @@
+package DAO;
+
 public class Password {
     private String password;
 
@@ -9,6 +11,7 @@ public class Password {
             Password = this.Password;
         }
     }
+
     public String getPassword() {
         return password;
     }

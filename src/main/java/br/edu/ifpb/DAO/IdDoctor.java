@@ -1,3 +1,5 @@
+package DAO;
+
 public class IdDoctor {
     private String idDoctor;
 

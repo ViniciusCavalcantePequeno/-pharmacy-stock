@@ -1,12 +1,12 @@
 package Objects;
 
-public class Medico {
+public class Doctor {
 
     private String nome;
     private String cpf;
     private String senha;
 
-    public Medico(String nome, String cpf, String senha) {
+    public Doctor(String nome, String cpf, String senha) {
         this.nome = nome;
         this.cpf = cpf;
         this.senha = senha;

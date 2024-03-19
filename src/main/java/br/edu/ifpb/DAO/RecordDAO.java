@@ -7,33 +7,33 @@ import Objects.Record;
 
 public class RecordDAO {
 
-    private List<Record> stock;
+    private List<Record> stockRecords;
 
     public RecordDAO() {
-        this.stock = new ArrayList<>();
+        this.stockRecords = new ArrayList<>();
     }
 
     public void addRecord(Record record) {
-        stock.add(Record);
+        stockRecords.add(record);
     }
 
     public Record searchRecordCardSus(int cardSus) {
-        for (Record record : stock) {
-            if (record.getCardSus() == cardSus) {
-                return Record;
+        for (Record record : stockRecords) {
+            if (record.getCardSUS() == cardSus) {
+                return record;
             }
         }
         return null;
     }
 
     public List<Record> listRecords() {
-        return stock;
+        return stockRecords;
     }
 
     public void removeRecord(int cardSus) {
         Record record = searchRecordCardSus(cardSus);
         if (record != null) {
-            stock.remove(cardSus);
+            stockRecords.remove(cardSus);
         }
     }
 
