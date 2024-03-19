@@ -7,43 +7,41 @@ import Objects.Remedy;
 
 public class StockDAO {
 
-    private List<Remedy> estoque;
+    private List<Remedy> stock;
 
-    public StockDAO(){
-        this.estoque = new ArrayList<>();
+    public StockDAO() {
+        this.stock = new ArrayList<>();
     }
 
-    public void adicionarItem(Remedy remedio) {
-        estoque.add(remedio);
+    public void addRemedy(Remedy remedy) {
+        stock.add(remedy);
     }
-    
-    public void removerItemPorId(int id) {
-        Remedy remedios = buscarRemedioPorId(id);
-        if (remedios != null) {
-            estoque.remove(id);
+
+    public void removeRemedyId(int id) {
+        Remedy remedy = searchRemedyId(id);
+        if (remedy != null) {
+            stock.remove(id);
         }
     }
 
-    public void atualizarQuantidade(int id, int novaQuantidade) {
-        Remedy remedios = buscarRemedioPorId(id);
-        if (remedios != null) {
-            remedios.setQuantidade(novaQuantidade);
+    public void updateQuantity(int id, int newQuantity) {
+        Remedy remedy = searchRemedyId(id);
+        if (remedy != null) {
+            remedy.setQuantity(newQuantity);
         }
     }
-    
-    public Remedy buscarRemedioPorId(int id) {
-        for (Remedy remedio : estoque) {
-            if (remedio.getId() == id) {
-                return remedio;
+
+    public Remedy searchRemedyId(int id) {
+        for (Remedy remedy : stock) {
+            if (remedy.getId() == id) {
+                return remedy;
             }
         }
         return null;
     }
 
-    public List<Remedy> listarRemedios() {
-        return estoque;
+    public List<Remedy> listRemedy() {
+        return stock;
     }
 
-
-    
 }

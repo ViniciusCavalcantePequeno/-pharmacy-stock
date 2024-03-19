@@ -2,13 +2,13 @@ package Objects;
 
 import java.util.ArrayList;
 
-public class Record {
+public class Prescription {
 
     private String nome;
     private ArrayList<Remedy> receitaDoMedico;
     private int cardSUS;
 
-    public Record(String nome, int cardSUS) {
+    public Prescription(String nome, int cardSUS) {
         this.receitaDoMedico = new ArrayList<>();
         this.nome = nome;
         this.cardSUS = cardSUS;

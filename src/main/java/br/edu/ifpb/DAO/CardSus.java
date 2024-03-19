@@ -1,16 +1,20 @@
 package DAO;
 
-public class CardSus{
+public class CardSus {
     private int cardSus;
-    
+
     public CardSus validateCardSus(int cardSus) {
-        if (CardSus cardSus < 14) {
+        if (cardSus < 15) {
             throw new 
         }
-        if (CardSus cardSus >= 15){
-            cardSus = this.cardSus;
+        if (cardSus > 15){
+            throw new;
+        }
+        if (cardSus == 15){
+            this.cardSus = cardSus;
         }
 }
+
     public int getCardSus() {
         return cardSus;
     }

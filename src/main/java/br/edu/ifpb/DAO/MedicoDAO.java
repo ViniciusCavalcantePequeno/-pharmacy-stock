@@ -2,7 +2,7 @@ package DAO;
 
 public class MedicoDAO {
 
-    private FichaDAO ficha;
+    private PrescriptionDAO ficha;
 
     public String receitarRemedios() {
         
