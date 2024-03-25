@@ -16,9 +16,8 @@ public class Main {
         ficha1.setReceita(soro);
         ficha1.setReceita(dipirona);
 
-        System.out.println(ficha1);
-
         ficha.addPrescription(ficha1);
-        System.out.println(ficha.listPrescriptions());
+        
+        System.out.println(ficha1);
     }
 }
