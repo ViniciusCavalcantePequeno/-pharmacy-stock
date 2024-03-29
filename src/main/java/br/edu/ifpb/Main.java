@@ -16,11 +16,12 @@ public class Main {
 
         Prescription ficha1 = new Prescription("Ramon de Oliveira Bento", 2424);
 
-        ficha.addPrescription(ficha1);
+        ficha1.setReceita(soro);
+        ficha1.setReceita(dipirona);
 
         System.out.println(ficha1);
 
-        // farma.dispatchPrescription(2424); // Não está funcionando
-        farma.seePrescriptions();   
+        ficha.addPrescription(ficha1);
+        System.out.println(ficha.listPrescriptions());
     }
 }
