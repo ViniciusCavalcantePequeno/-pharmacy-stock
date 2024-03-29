@@ -2,18 +2,21 @@ package DAO;
 
 public class PharmaceuticalDAO {
 
-    public void acessarFichas() {
+    private StockDAO remedy;
+    private PrescriptionDAO prescription;
 
+    public void seePrescriptions() {
+        System.out.println(prescription.listPrescriptions());
     }
 
-    public void despacharFicha() {
-
+    public void dispatchPrescription(int cardSUS) {
+        prescription.removerPrescription(cardSUS);
     }
 
-    public void buscarRemedioPorId(int id) {
-
+    public void searchRemedyId(int id) {
+        System.out.println(remedy.searchRemedyId(id));
     }
 
-    // public void porFichaEmEspera();
+    // public void porprescriptionEmEspera();
 
 }

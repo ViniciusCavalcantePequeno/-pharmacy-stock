@@ -1,4 +1,6 @@
-package DAO;
+package Validators;
+
+import Exceptions.NameDoctorDisabledException;
 
 public class CpfDoctor {
 
@@ -9,7 +11,7 @@ public class CpfDoctor {
             cpfDoctor = this.cpfDoctor;
         }
         if (cpfDoctor.length() < 5 && cpfDoctor.length() > 50) {
-            throw new 
+            throw new CpfDesabledExeption();
         }
     }
 

@@ -1,19 +1,19 @@
 package DAO;
 
+import Objects.Prescription;
+import Objects.Remedy;
+
 public class MedicoDAO {
 
-    private PrescriptionDAO ficha;
+    private StockDAO remedy;
+    private Prescription prescription;
 
-    public String receitarRemedios() {
-        
+    public void prescribleMedicine(Remedy remedy) {
+        prescription.setReceita(remedy);
     }
 
-    public void addFichasNoSistema() {
-
-    }
-
-    public void buscarRemedioPorId(int id) {
-
+    public void searchRemedyId(int id) {
+        System.out.println(remedy.searchRemedyId(id));
     }
 
 }

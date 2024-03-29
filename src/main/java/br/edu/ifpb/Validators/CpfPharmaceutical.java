@@ -1,4 +1,4 @@
-package DAO;
+package Validators;
 
 public class CpfPharmaceutical {
 

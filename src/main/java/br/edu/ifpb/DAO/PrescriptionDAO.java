@@ -31,10 +31,12 @@ public class PrescriptionDAO {
     }
 
     public void removerPrescription(int cartaoDoSUS) {
-        Prescription Prescription = searchPrescriptionsByCardSUS(cartaoDoSUS);
-        if (Prescription != null) {
+        Prescription prescription = searchPrescriptionsByCardSUS(cartaoDoSUS);
+        if (prescription != null) {
             stockPrescriptions.remove(cartaoDoSUS);
+            System.out.printf("A ficha de %s foi removida", prescription.getNome());
         }
+        System.out.printf("Nenhuma ficha com o numero %d foi encontrada", prescription.getCardSUS());
     }
 
 }
