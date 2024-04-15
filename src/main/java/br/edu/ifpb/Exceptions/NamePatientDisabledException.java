@@ -1,5 +1,7 @@
-class NameDoctorDisabledException extends RuntimeException {
-    public NameDoctorDisabledException(String message) {
+package Exceptions;
+
+public class NamePatientDisabledException extends RuntimeException {
+    public NamePatientDisabledException(String message) {
         super(message);
     }
 }

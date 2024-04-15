@@ -1,11 +1,10 @@
 package Objects;
 
 public class Doctor {
-
     private String nome;
     private String cpf;
     private String senha;
-
+    
     public Doctor(String nome, String cpf, String senha) {
         this.nome = nome;
         this.cpf = cpf;
@@ -35,5 +34,4 @@ public class Doctor {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-
 }

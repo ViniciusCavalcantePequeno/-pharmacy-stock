@@ -1,17 +1,21 @@
 package Validators;
 
+import Exceptions.CpfDisabledException;
+
 public class CpfPharmaceutical {
 
     private String cpfPharmaceutical;
 
-    public CpfPharmaceutical validateCpfPharmaceutico(String cpfPharmaceutical) {
-        if (cpfPharmaceutical.length() > 5 && cpfPharmaceutical.length() < 50){
-            cpfPharmaceutical = this.cpfPharmaceutical;
+    public String validatorCpfPharmaceutical(String cpfPharmaceutical) {
+        try {
+            if (cpfPharmaceutical.length() == 14) {
+                return cpfPharmaceutical = this.cpfPharmaceutical;
+            }
+
+        } catch (CpfDisabledException cpfDisabledException) {
+            return "Por favor, forneça o cpf da seguinte forma: xxx.xxx.xxx-xx";
         }
-        
-        if (cpfPharmaceutical.length() < 5 && cpfPharmaceutical.length() > 50) {
-            throw new 
-        }
+        return null;
     }
 
     public String getCpfPharmaceutical() {
@@ -21,4 +25,5 @@ public class CpfPharmaceutical {
     public void setCpfPharmaceutical(String cpfPharmaceutical) {
         this.cpfPharmaceutical = cpfPharmaceutical;
     }
+
 }

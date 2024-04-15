@@ -1,11 +1,10 @@
 package Objects;
 
 public class Pharmaceutical {
-    
     private String nome;
     private String cpf;
     private String senha;
-    
+
     public Pharmaceutical(String nome, String cpf, String senha) {
         this.nome = nome;
         this.cpf = cpf;
@@ -35,6 +34,4 @@ public class Pharmaceutical {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-
-
 }

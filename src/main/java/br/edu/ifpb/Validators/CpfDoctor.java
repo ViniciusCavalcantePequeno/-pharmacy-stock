@@ -1,18 +1,21 @@
 package Validators;
 
-import Exceptions.NameDoctorDisabledException;
+import Exceptions.CpfDisabledException;
 
 public class CpfDoctor {
 
     private String cpfDoctor;
 
-    public CpfDoctor validateCpfDoctor(String cpfDoctor) {
-        if (cpfDoctor.length() > 5 && cpfDoctor.length() < 50){
-            cpfDoctor = this.cpfDoctor;
+    public String validatorCpfDoctor(String cpfDoctor){
+        try {
+            if(cpfDoctor.length() == 14){
+                return cpfDoctor = this.cpfDoctor;
+            }
+            
+        } catch (CpfDisabledException cpfDisabledException) {
+            return "Por favor, forneça o cpf da seguinte forma: xxx.xxx.xxx-xx";
         }
-        if (cpfDoctor.length() < 5 && cpfDoctor.length() > 50) {
-            throw new CpfDesabledExeption();
-        }
+        return null;
     }
 
     public String getCpfDoctor() {
@@ -22,4 +25,5 @@ public class CpfDoctor {
     public void setCpfDoctor(String cpfDoctor) {
         this.cpfDoctor = cpfDoctor;
     }
+
 }

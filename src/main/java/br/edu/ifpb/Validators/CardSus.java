@@ -1,22 +1,27 @@
 package Validators;
 
-public class CardSus {
-    private int cardSus;
+import Exceptions.CardSUSNotFoundException;
 
-    public CardSus validateCardSus(int cardSus) {
-        if (cardSus < 15 || cardSus > 15) {
-            throw new 
+public class CardSUS {
+
+private String cardSUS;
+
+public String validateCardSus(String cardSUS) {
+    try {
+        if (cardSUS.length() == 19){
+                return this.cardSUS = cardSUS;
+            }
+        } catch (CardSUSNotFoundException e) {
+            return "Por favor, forneça a numeração da seguinte forma: xxx-xxxx-xxxx-xxxx";
         }
-        if (cardSus == 15){
-            this.cardSus = cardSus;
+        return null;
+    }
+        public String getCardSUS() {
+            return cardSUS;
         }
-}
-
-    public int getCardSus() {
-        return cardSus;
-    }
-
-    public void setCardSus(int cardSus) {
-        this.cardSus = cardSus;
+        
+        public void setCardSUS(String cardSUS) {
+            this.cardSUS = cardSUS;   
     }
 }
+    
