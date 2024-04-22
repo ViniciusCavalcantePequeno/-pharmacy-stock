@@ -36,6 +36,6 @@ public class Prescription {
 
     @Override
     public String toString() {
-        return "\n\nNome: " + nome + "\nCartao SUS: " + cardSUS + "\nRemedio(s): " + DoctorsPrescription + "\n\n";
+        return "\nNome: " + nome + "\nCartao SUS: " + cardSUS + "\nRemedio(s): " + DoctorsPrescription + "\n";
     }
 }

@@ -38,7 +38,7 @@ public class Remedy {
 
     @Override
     public String toString() {
-        return "\nId: " + id + " / Nome: " + name + " / Quantidade: " + quantity + "\n";
+        return "\nNome: " + name + "\n";
     }
 
 }
