@@ -1,0 +1,14 @@
+1 - A classe "Remedy" recebe id, nome e quantidade. Quantidade não
+deve ser associada na criação do objeto, mas sim no momento em que
+se receita. 
+
+2 - O método "searchRemedyId" está na classe MedicoDAO, talvez não
+seja o melhor lugar.
+
+3 - Terminar os validadores.
+
+4 - Criar um método para exibir prescriação ao invés de sobrescrever
+o "toString" da classe "Prescription".
+
+5 - Elaborar a classe "PrescriptionInterface". Programar 
+para a interface.
