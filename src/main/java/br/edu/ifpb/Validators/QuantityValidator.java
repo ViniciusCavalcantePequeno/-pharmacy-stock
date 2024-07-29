@@ -1,10 +1,10 @@
 package Validators;
 
-import exceptions.QuantityDisabledException;
+import exceptions.*;
 
 public class QuantityValidator{
 
-    public boolean validateQuantity(int quantity) throws QuantityDisabledException {
+    public boolean validateQuantity(int quantity) {
         if (quantity < 0) {
             throw new QuantityDisabledException();
         } else {

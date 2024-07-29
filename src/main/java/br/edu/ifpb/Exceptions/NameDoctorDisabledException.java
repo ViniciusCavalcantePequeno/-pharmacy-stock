@@ -1,5 +1,7 @@
-class NameDoctorDisabledException extends RuntimeException{
-    public NameDoctorDisabledException(String message){
-        super("Nome de medico invalido");
+package exceptions;
+
+public class NameDoctorDisabledException extends RuntimeException {
+    public NameDoctorDisabledException() {
+        super("aa");
     }
 }

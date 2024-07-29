@@ -1,5 +1,7 @@
-class QuantityDisabledException extends RuntimeException{
-    public QuantityDisabledException(String message){
+package exceptions;
+
+public class QuantityDisabledException extends RuntimeException {
+    public QuantityDisabledException() {
         super("Quantidade insuficiente");
     }
 }

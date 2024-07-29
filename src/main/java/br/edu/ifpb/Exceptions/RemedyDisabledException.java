@@ -1,5 +1,7 @@
-class RemedyDisabledException extends RuntimeException{
-    public RemedyDisabledException(String message){
+package exceptions;
+
+public class RemedyDisabledException extends RuntimeException{
+    public RemedyDisabledException(){
         super("Remedio inválido");
     }
 }

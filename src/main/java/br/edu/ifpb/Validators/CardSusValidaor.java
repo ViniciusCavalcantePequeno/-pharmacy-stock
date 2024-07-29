@@ -1,8 +1,8 @@
 package Validators;
 
-import exceptions.NamePatientDisabledException;
+import exceptions.*;
 
-public class CardSusValidaor {
+public class CardSusValidaor extends Exception {
 
     public boolean validateCardSus(int cardSus) {
         if (cardSus < 15 || cardSus > 15) {

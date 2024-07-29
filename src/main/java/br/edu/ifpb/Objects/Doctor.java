@@ -1,6 +1,8 @@
 package Objects;
 
-public class Doctor {
+import Interfaces.UserInterface;
+
+public class Doctor implements UserInterface {
 
     private String nome;
     private String cpf;
